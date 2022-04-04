@@ -1,0 +1,126 @@
+/*Declarando variaáveis*/
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+/*Configurações gerais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);       
+    font-family: 'Netflix Sans','bebas Kai', 'Lucida Sans', 'Lucida Sans Regular';
+    color: #fff;
+}
+
+/*Configurações do HEADER*/
+header{
+    border-bottom: 1px solid #1f1d1d;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-left: 15px;
+}
+
+header nav{
+    padding-right: 50px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Configurações do Filme Principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)) ,url(../resources/capa-house.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titulo{
+    font-size: 40px;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+
+/*Ajustando os botões*/
+
+.btn1{
+    background-color: #fff;
+    padding:9px 20px;
+    border-radius: 3px;
+    border: #141414 solid 1px;
+    margin-left: 40px;
+    font-family: 'Netflix Sans','bebas Kai', 'Lucida Sans', 'Lucida Sans Regular';
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.btn1:hover{
+    background-color: rgb(49, 47, 47);
+    color: #fff;
+    padding:9px 20px;
+    border-radius: 3px;
+    border: #141414 solid 1px;
+    margin-left: 40px;
+    font-family: 'Netflix Sans','bebas Kai', 'Lucida Sans', 'Lucida Sans Regular';
+}
+
+.btn2{
+    background-color: rgba(123, 120, 121, 0.5);
+    color: #fff;
+    padding:9px 20px;
+    border-radius: 3px;
+    border: #141414 solid 1px;
+    font-family: 'Netflix Sans','bebas Kai', 'Lucida Sans', 'Lucida Sans Regular';
+    cursor: pointer;
+    transition: .3s  ease all;
+}
+
+.btn2:hover{
+    background-color: rgb(174, 174, 174);
+    color: #fff;
+    padding:9px 20px;
+    border-radius: 3px;
+    border: #141414 solid 1px;
+    font-family: 'Netflix Sans','bebas Kai', 'Lucida Sans', 'Lucida Sans Regular';
+}
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 80%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-films{
+    margin-top: 5px
+}
